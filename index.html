@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- header started -->
+    <header>
+     <div class="heading flex">
+       <h1>notNotion</h1>
+       <h5>Manage And Search Your Pending Tasks in Clicks!</h5>
+     </div>
+    </header>
+   <!-- header end -->
+  <!-- search task -->
+    <section>
+     <div class="search-box">
+        <form class="search">
+            <input type="text" name="task" placeholder="search task" autocomplete="off">
+            <i class="bi bi-x-circle reset"></i>
+        </form>
+     </div>
+    </section>
+
+    <section>
+        <div class="task ">
+          <ul class="task-ul flex">
+            <li>
+                <span>Recording</span>
+                <i class="bi bi-trash delete"></i>
+            </li>
+            <li>
+                <span>Primathon</span>
+                <i class="bi bi-trash delete"></i>
+            </li>
+            <li>
+                <span>AD Recording</span>
+                <i class="bi bi-trash delete"></i>
+            </li>
+          </ul>
+          <form class="addtask flex">
+            <input  type="text" name="task" placeholder="add task" autocomplete="off">
+            <input type="submit" value="Add">
+        </form>
+        </div>
+    </section>
+    <section class="pendingsection">
+        <div class=" pendingtask-div flex"> 
+            <span>You have 2 pending tasks</span>
+            <button class="clearall">Clear All</button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
